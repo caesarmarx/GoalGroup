@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/search_filter_background" >
+
+	<ScrollView
+        android:id="@+id/scroll_bbs"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+    <LinearLayout
+        android:id="@+id/area_market_search"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/ly_filter_cond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+	        
+	        <LinearLayout
+	            android:id="@+id/area_action_age"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:orientation="vertical" >
+	                
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="right"
+	                android:text="@string/age_area"
+	                android:textColor="@color/normal_text"
+	                android:textSize="18sp" />
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginTop="15dp"
+	                android:orientation="vertical" >
+
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal" >
+
+	                    <TextView
+	                        android:id="@+id/tv_action_age_1"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="18岁以下"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_age_2"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="18-25"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_age_3"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="26-33"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_age_4"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="34-41"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                </LinearLayout>
+	                
+	                <LinearLayout 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="10dp"
+	                    >
+	                    
+	                    <TextView
+	                        android:id="@+id/tv_action_age_5"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="42-49"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+	                    
+	                    <TextView
+		                    android:id="@+id/tv_action_age_6"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="10dp"
+		                    android:ellipsize="end"
+		                    android:maxLines="1"
+		                    android:text="50以上"
+		                    android:textColor="@color/pattern_dark_gray"
+		                    android:textSize="16sp" />
+	                    
+	                </LinearLayout>
+
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/area_action_position"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="20dp"
+	            android:gravity="center_vertical"
+	            android:orientation="vertical" >
+	                
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="right"
+	                android:text="@string/player_position"
+	                android:textColor="@color/normal_text"
+	                android:textSize="18sp" />
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginTop="15dp" >
+
+	                <TextView
+	                    android:id="@+id/tv_action_position_1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ellipsize="end"
+	                    android:maxLines="1"
+	                    android:text="前锋"
+	                    android:textColor="@color/pattern_dark_gray"
+	                    android:textSize="16sp" />
+	                
+	                <TextView
+	                    android:id="@+id/tv_action_position_2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="15dp"
+	                    android:ellipsize="end"
+	                    android:maxLines="1"
+	                    android:text="中场"
+	                    android:textColor="@color/pattern_dark_gray"
+	                    android:textSize="16sp" />
+	                
+	                <TextView
+	                    android:id="@+id/tv_action_position_3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="15dp"
+	                    android:ellipsize="end"
+	                    android:maxLines="1"
+	                    android:text="后卫"
+	                    android:textColor="@color/pattern_dark_gray"
+	                    android:textSize="16sp" />
+	                
+	                <TextView
+	                    android:id="@+id/tv_action_position_4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="15dp"
+	                    android:ellipsize="end"
+	                    android:maxLines="1"
+	                    android:text="门将"
+	                    android:textColor="@color/pattern_dark_gray"
+	                    android:textSize="16sp" />
+
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/area_action_weekday"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="20dp"
+	            android:clickable="true"
+	            android:orientation="vertical" >
+	                
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="right"
+	                android:text="@string/play_dates"
+	                android:textColor="@color/normal_text"
+	                android:textSize="18sp" />
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginTop="15dp"
+	                android:orientation="vertical" >
+
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content" >
+
+	                    <TextView
+	                        android:id="@+id/tv_action_weekday_1"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="周一"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_weekday_2"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="周二"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_weekday_3"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="周三"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_weekday_4"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="周四"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_weekday_5"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="周五"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_weekday_6"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="周六"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+	                </LinearLayout>
+
+	                <TextView
+	                    android:id="@+id/tv_action_weekday_7"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="10dp"
+	                    android:ellipsize="end"
+	                    android:maxLines="1"
+	                    android:text="周日"
+	                    android:textColor="@color/pattern_dark_gray"
+	                    android:textSize="16sp" />
+
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/area_action_location"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="20dp"
+	            android:orientation="vertical" >
+	                
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="right"
+	                android:text="@string/play_areas"
+	                android:textColor="@color/normal_text"
+	                android:textSize="18sp" />
+
+	            <LinearLayout
+	                android:id="@+id/area_player_location_name"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginTop="15dp"
+	                android:orientation="vertical" >
+
+<!--                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content" >
+
+	                    <TextView
+	                        android:id="@+id/tv_action_location_1"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="秀洲区"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_location_2"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="南湖区"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_location_3"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="闵行区"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+
+	                    <TextView
+	                        android:id="@+id/tv_action_location_4"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="15dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="浦东区"
+	                        android:textColor="@color/pattern_dark_gray"
+	                        android:textSize="16sp" />
+	                </LinearLayout>
+
+	                <TextView
+	                    android:id="@+id/tv_action_location_5"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="10dp"
+	                    android:ellipsize="end"
+	                    android:maxLines="1"
+	                    android:text="新开发区"
+	                    android:textColor="@color/pattern_dark_gray"
+	                    android:textSize="16sp" /> -->
+
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	
+	        <Button
+	            android:id="@+id/btn_search_ok"
+	            android:layout_width="100dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/btn_green_stroke"
+	            android:gravity="center"
+	            android:text="@string/ok"
+	            android:textColor="@color/normal_text" />
+	
+	        <Button
+	            android:id="@+id/btn_search_cancel"
+	            android:layout_width="100dp"
+	            android:layout_height="40dp"
+	            android:layout_marginLeft="20dp"
+	            android:background="@drawable/btn_green_stroke"
+	            android:gravity="center"
+	            android:text="@string/cancel"
+	            android:textColor="@color/normal_text" />
+	
+	    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/regist_total_area"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pattern_gray"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/user_regist_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+       
+        layout="@layout/top_view_common" />
+
+    <ScrollView
+        android:id="@+id/scroll_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/regist_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/area_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/user_regist_top_view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/alias"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/area_user_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_password_01"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/area_phone_number"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/password_01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/password"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_password_02"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/area_password_01"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/password_02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/password_conf"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/regist"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/area_password_02"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/btn_green"
+                android:text="@string/register"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

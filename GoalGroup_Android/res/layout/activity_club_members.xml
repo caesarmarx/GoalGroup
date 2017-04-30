@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pattern_gray" >
+    
+    <include
+        android:id="@+id/club_members_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_common" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/club_members_top_view"
+        android:background="@drawable/club_member_bg"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginBottom="18dp"
+	        android:layout_marginLeft="25dp"
+	        android:layout_marginRight="23dp"
+	        android:orientation="vertical" >
+	        
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="0.2"
+	            android:background="#3315a1e1" >
+
+	            <RelativeLayout
+	                android:id="@+id/mem_delete_player"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:visibility="invisible" />
+
+	            <RelativeLayout
+	                android:id="@+id/relativeLayout1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentTop="true"
+	                android:layout_alignParentLeft="true"
+	                android:layout_marginLeft="35dp" >
+
+	                <TextView
+	                    android:id="@+id/mem_title_captain"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/club_member_pos"
+	                    android:layout_centerHorizontal="true"
+	                    android:gravity="center"
+	                    android:paddingLeft="5dp"
+	                    android:paddingRight="5dp"
+	                    android:text="@string/club_caption_caption"
+	                    android:textColor="@color/white"
+	                    android:textSize="14sp" />
+
+	                <com.goalgroup.ui.view.CircularImageView
+	                    android:id="@+id/photo_captain"
+	                    android:layout_width="40dp"
+	                    android:layout_height="40dp"
+	                    android:layout_below="@+id/mem_title_captain"
+	                    android:layout_centerHorizontal="true"
+	                    android:contentDescription="@string/img_desc_empty"
+	                    android:src="@drawable/photo_default"
+	                    app:border="true"
+	                    app:border_color="@color/pattern_dark_blue"
+	                    app:border_width="2dp"
+	                    app:shadow="true" />
+	                
+	                <TextView
+	                    android:id="@+id/name_captain"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_below="@+id/photo_captain"
+	                    android:layout_alignParentBottom="true"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_marginBottom="2dp"
+	                    android:paddingLeft="3dp"
+	                    android:paddingRight="3dp"
+	                    android:text="@string/img_desc_empty"
+	                    android:textColor="@color/black_gray"
+	                    android:textSize="12sp"
+	                    android:textStyle="bold" />
+
+	            </RelativeLayout>
+
+	            <RelativeLayout
+	                android:id="@+id/relativeLayout2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginRight="35dp" >
+
+	                <TextView
+	                    android:id="@+id/mem_title_coach"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_centerHorizontal="true"
+	                    android:background="@drawable/club_member_pos"
+	                    android:gravity="center"
+	                    android:paddingLeft="5dp"
+	                    android:paddingRight="5dp"
+	                    android:text="@string/club_manager_caption"
+	                    android:textColor="@color/white"
+	                    android:textSize="14sp" />
+
+	                <com.goalgroup.ui.view.CircularImageView
+	                    android:id="@+id/photo_manager"
+	                    android:layout_width="40dp"
+	                    android:layout_height="40dp"
+	                    android:layout_below="@+id/mem_title_coach"
+	                    android:layout_centerHorizontal="true"
+	                    android:contentDescription="@string/img_desc_empty"
+	                    android:src="@drawable/photo_default"
+	                    app:border="true"
+	                    app:border_color="@color/yellow"
+	                    app:border_width="2dp"
+	                    app:shadow="true" />
+	                
+	                <TextView
+	                    android:id="@+id/name_manager"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_below="@+id/photo_manager"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_marginBottom="2dp"
+	                    android:paddingLeft="3dp"
+	                    android:paddingRight="3dp"
+	                    android:text="@string/img_desc_empty"
+	                    android:textColor="@color/black_gray"
+	                    android:textSize="12sp"
+	                    android:textStyle="bold" />
+
+	            </RelativeLayout>
+	        </RelativeLayout>
+	        
+	        <include
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.2"
+		        layout="@layout/layout_club_members_01" />
+		    
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.2"
+		        layout="@layout/layout_club_members_02" />
+		    
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.2"
+		        layout="@layout/layout_club_members_03" />
+		    
+		    <include
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.2"
+		        layout="@layout/layout_club_members_04" />
+	    
+	    </LinearLayout>
+	    
+    </LinearLayout>
+
+</RelativeLayout>

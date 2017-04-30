@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emoticon_array">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+    </string-array>
+    <string-array name="emoticon_title_array">
+        <item>Happy</item>
+        <item>Sad</item>
+        <item>Winking</item>
+        <item>Surprised</item>
+        <item>Kissing</item>
+        <item>Cool</item>
+        <item>money mouth</item>
+        <item>Angel</item>
+        <item>Crying</item>
+    </string-array>
+</resources>

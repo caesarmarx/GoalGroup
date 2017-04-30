@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3315a1e1" >
+    
+    <RelativeLayout
+        android:id="@+id/pos_midfield_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/club_member_pos"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:text="@string/position_midfield"
+	        android:textSize="14sp"
+	        android:textColor="@color/white" />
+	    
+	</RelativeLayout>
+    
+    <HorizontalScrollView
+        android:id="@+id/hs_pos_midfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pos_midfield_title"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" >
+        
+        <LinearLayout
+            android:id="@+id/ly_pos_midfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal" >
+            
+        </LinearLayout>
+        
+    </HorizontalScrollView>
+    
+</RelativeLayout>

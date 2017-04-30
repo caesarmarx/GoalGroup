@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:id="@+id/chall_item_total_area"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/total_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" >
+        
+        <FrameLayout
+            android:id="@+id/chall_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp" >
+
+            <RelativeLayout
+                android:id="@+id/chall_item_area_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/challenge_cell_bg_03" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" >
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/challenge_vs" />
+
+                        <TextView
+                            android:id="@+id/player_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/player_number"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/player_number"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:id="@+id/challenge_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" >
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:layout_weight="0.4" >
+
+                                <TextView
+                                    android:id="@+id/club_name_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/club_mark_01"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="@string/clubname"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+
+                                <com.goalgroup.ui.view.CircularImageView
+                                    android:id="@+id/club_mark_01"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="@string/img_desc_empty"
+                                    app:border="true"
+                                    app:border_color="@color/pattern_dark_gray"
+                                    app:border_width="1dp"
+                                    app:shadow="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.2" >
+
+                                <TextView
+                                    android:id="@+id/game_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:paddingBottom="5dp"
+                                    android:paddingLeft="1dp"
+                                    android:text="17:00"
+                                    android:textColor="@color/yellow"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:layout_weight="0.4" >
+
+                                <com.goalgroup.ui.view.CircularImageView
+                                    android:id="@+id/club_mark_02"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="@string/img_desc_empty"
+                                    app:border="true"
+                                    app:border_color="@color/pattern_dark_gray"
+                                    app:border_width="1dp"
+                                    app:shadow="true" />
+
+                                <TextView
+                                    android:id="@+id/club_name_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/club_mark_02"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="@string/clubname"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/game_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingRight="15dp"
+                    android:text="02-18/周三 17:30"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/game_remain_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="82:45:26"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stadium_area_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chall_item_area_sub"
+                android:background="@drawable/green_bottom_panel"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/stadium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/stadium"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/delete_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/game_delete"
+            android:visibility="gone" />
+        
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/chall_funcs"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_chall_btn"
+                android:orientation="vertical"
+                android:weightSum="3" >
+
+                <RelativeLayout
+                    android:id="@+id/chall_func_meeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:background="@drawable/chall_func_01"
+		                    android:contentDescription="@string/img_desc_empty" />
+	                	<TextView
+	                	    android:id="@+id/recommend"
+	                	    android:layout_width="wrap_content"
+	                	    android:layout_height="wrap_content"
+	                	    android:text="@string/recommend"
+	                	    android:textColor="@color/white" />
+                	</LinearLayout>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/chall_func_response"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:background="@drawable/chall_func_02"
+		                    android:contentDescription="@string/img_desc_empty" />
+		                <TextView
+	                	    android:id="@+id/response_game"
+	                	    android:layout_width="wrap_content"
+	                	    android:layout_height="wrap_content"
+	                	    android:text="@string/response_game"
+	                	    android:textColor="@color/white" />
+                	</LinearLayout>
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/chall_func_discuss"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:background="@drawable/chall_func_03"
+		                    android:contentDescription="@string/img_desc_empty" />
+	                	<TextView
+	                	    android:id="@+id/discuss"
+	                	    android:layout_width="wrap_content"
+	                	    android:layout_height="wrap_content"
+	                	    android:text="@string/discuss"
+	                	    android:textColor="@color/white" />
+                	</LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/history_area"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green_bk" 
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical" >
+    
+        <RelativeLayout
+            android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.2" >
+	        
+	    <TextView
+	        android:id="@+id/history_info_01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:gravity="center"
+	        android:background="@drawable/dark_green_panel"
+	        android:text="2013"
+	        android:textSize="14sp"
+	        android:textColor="@color/white" />
+	    
+	    </RelativeLayout>
+	    
+	    <TextView
+	        android:id="@+id/history_info_02"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"
+	        android:gravity="center"
+	        android:text="20"
+	        android:textColor="@color/white"
+	        android:textSize="14sp" />
+	    
+	    <TextView
+	        android:id="@+id/history_info_03"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"
+	        android:gravity="center"
+	        android:text="15"
+	        android:textSize="14sp"
+	        android:textColor="@color/cream" />
+	    
+	    <TextView
+	        android:id="@+id/history_info_04"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"
+	        android:gravity="center"
+	        android:text="1"
+	        android:textSize="14sp"
+	        android:textColor="@color/pattern_black_green" />
+	    
+	    <TextView
+	        android:id="@+id/history_info_05"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"
+	        android:gravity="center"
+	        android:text="4"
+	        android:textSize="14sp"
+	        android:textColor="@color/txt_red" />
+	    
+	    <TextView
+	        android:id="@+id/history_info_06"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.15"
+	        android:gravity="center"
+	        android:text="18"
+	        android:textSize="14sp"
+	        android:textColor="@color/white" />
+	    
+	    <TextView
+	        android:id="@+id/history_info_07"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.15"
+	        android:gravity="center"
+	        android:text="8"
+	        android:textSize="14sp"
+	        android:textColor="@color/white" />
+	    
+	    <TextView
+	        android:id="@+id/history_info_08"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.2"
+	        android:gravity="center"
+	        android:text="10"
+	        android:textSize="14sp"
+	        android:textColor="@color/white" />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/devide_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/devide_line" />
+    
+</LinearLayout>

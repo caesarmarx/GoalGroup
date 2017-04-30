@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:id="@+id/reply_area"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pattern_gray"
+    android:orientation="horizontal" >
+    
+    <View
+        android:id="@+id/reply_depth_01"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+    <View
+        android:id="@+id/reply_depth_02"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+    <View
+        android:id="@+id/reply_depth_03"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:id="@+id/reply_content_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bbs_reply_bg_top"
+                android:contentDescription="@string/img_desc_empty" />
+            
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:id="@+id/bbs_answer_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/bbs_reply" >
+            <RelativeLayout
+                android:id="@+id/bbs_answer_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+            	android:paddingRight="10dp" >
+            
+            	<TextView
+	                android:id="@+id/user_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentBottom="true"
+	                android:text="@string/alias"
+	                android:textSize="14sp"
+	                android:textColor="@color/button_pattern_green" />
+	            
+	            <TextView
+	                android:id="@+id/reply_lb"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@+id/user_name"
+	                android:layout_alignParentBottom="true"
+	                android:text=" 回复 "
+	                android:textSize="14sp"
+	                android:textColor="@color/gray" />
+	            <TextView
+	                android:id="@+id/reply_user_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@+id/reply_lb"
+	                android:layout_alignParentBottom="true"
+	                android:text="@string/alias"
+	                android:textSize="14sp"
+	                android:textColor="@color/button_pattern_green" />
+	            
+	            <TextView
+	                android:id="@+id/reply_date_time"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:text="@string/date_value"
+	                android:textSize="10sp"
+	                android:textColor="@color/gray" />
+            </RelativeLayout>
+            <com.goalgroup.ui.view.xTextView
+                android:id="@+id/reply_contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bbs_answer_top"
+                android:paddingTop="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/dark_gray" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

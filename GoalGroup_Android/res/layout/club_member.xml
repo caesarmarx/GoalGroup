@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:id="@+id/club_member_cell_empty"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp">
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_centerInParent="true">
+	
+	    <com.goalgroup.ui.view.CircularImageView
+	        android:id="@+id/member_photo"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_centerHorizontal="true"
+	        android:contentDescription="@string/img_desc_empty" 
+	        app:border="true"
+	        app:border_color="@color/pattern_dark_gray"
+	        app:border_width="1dp"
+	        app:shadow="true"/>
+	    
+	    <com.goalgroup.ui.view.CircularImageView
+	        android:id="@+id/member_photo_temp"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_centerHorizontal="true"
+	        android:contentDescription="@string/img_desc_empty" 
+	        android:visibility="invisible"
+	        app:border="true"
+	        app:border_color="@color/red"
+	        app:border_width="2dp"
+	        app:shadow="true"/>
+	    
+	    <com.goalgroup.ui.view.CircularImageView
+	        android:id="@+id/member_photo_captain"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_centerHorizontal="true"
+	        android:contentDescription="@string/img_desc_empty" 
+	        android:visibility="invisible"
+	        app:border="true"
+	        app:border_color="@color/pattern_dark_blue"
+	        app:border_width="2dp"
+	        app:shadow="true"/>
+	    <com.goalgroup.ui.view.CircularImageView
+	        android:id="@+id/member_photo_manager"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_centerHorizontal="true"
+	        android:contentDescription="@string/img_desc_empty" 
+	        android:visibility="invisible"
+	        app:border="true"
+	        app:border_color="@color/yellow"
+	        app:border_width="2dp"
+	        app:shadow="true"/>
+
+	    <TextView
+	        android:id="@+id/member_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/member_photo"
+	        android:layout_centerHorizontal="true"
+	        android:text="user"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/black_gray"
+	        android:textSize="12sp"
+	        android:textStyle="bold" />
+	
+	    <ImageView
+	        android:id="@+id/member_health"
+	        android:layout_width="15dp"
+	        android:layout_height="15dp"
+	        android:layout_alignTop="@+id/member_photo"
+	        android:layout_alignRight="@+id/member_photo"
+	        android:background="@drawable/health_mark"
+	        android:contentDescription="@string/img_desc_empty"
+	        android:visibility="invisible" />
+	</RelativeLayout>
+</RelativeLayout>

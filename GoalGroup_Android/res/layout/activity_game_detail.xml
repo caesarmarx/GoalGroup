@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/game_detail_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_common" />
+	<ScrollView
+	    	android:id="@+id/scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_below="@id/game_detail_top_view">
+	    <LinearLayout
+	        android:id="@+id/linear_layout_01"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	
+	        <RelativeLayout
+	            android:id="@+id/area_game_detail"
+	            android:layout_width="fill_parent"
+	            android:layout_height="match_parent"
+	            android:layout_below="@id/game_detail_top_view"
+	            android:layout_margin="10dp" >
+	
+	            <RelativeLayout
+	                android:id="@+id/relative_layout"
+	                android:layout_width="match_parent"
+	                android:layout_height="185dp"
+	                android:background="@drawable/challenge_cell_bg_03" >
+	
+	                <TextView
+	                    android:id="@+id/game_remain_time"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginRight="10dp"
+	                    android:layout_marginTop="5dp"
+	                    android:text="82:45:26"
+	                    android:textColor="@color/black"
+	                    android:textSize="14sp"
+	                    android:visibility="gone" />
+	
+	                <LinearLayout
+	                    android:id="@+id/linearLayout1"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerVertical="true"
+	                    android:paddingTop="20dp"
+	                    android:baselineAligned="false"
+	                    android:orientation="horizontal" >
+	
+	                    <LinearLayout
+	                        android:layout_width="0dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="0.1" >
+	                    </LinearLayout>
+	
+	                    <FrameLayout
+	                        android:layout_width="0dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="0.8"
+	                        android:orientation="vertical" >
+	
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="70dp"
+	                            android:layout_gravity="bottom"
+	                            android:layout_marginBottom="20dp"
+	                            android:background="@drawable/challenge_vs" />
+	
+	                        <TextView
+	                            android:id="@+id/player_number"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_gravity="center_horizontal"
+	                            android:layout_marginTop="5dp"
+	                            android:background="@drawable/player_number"
+	                            android:paddingLeft="5dp"
+	                            android:paddingRight="5dp"
+	                            android:text="@string/player_number"
+	                            android:textColor="@color/black"
+	                            android:textSize="12sp" />
+	
+	                        <LinearLayout
+	                            android:id="@+id/challenge_area"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:paddingLeft="10dp"
+	                            android:paddingRight="10dp" >
+	
+	                            <RelativeLayout
+	                                android:layout_width="0dp"
+	                                android:layout_height="wrap_content"
+	                                android:layout_marginBottom="25dp"
+	                                android:layout_weight="0.4" >
+	
+	                                <com.goalgroup.ui.view.CircularImageView
+	                                    android:id="@+id/club_mark_01"
+	                                    android:layout_width="55dp"
+	                                    android:layout_height="55dp"
+	                                    android:layout_alignParentTop="true"
+	                                    android:layout_centerHorizontal="true"
+	                                    android:contentDescription="@string/img_desc_empty"
+	                                    app:border="true"
+	                                    app:border_color="@color/pattern_dark_gray"
+	                                    app:border_width="1dp"
+	                                    app:shadow="true" />
+	
+	                                <TextView
+	                                    android:id="@+id/club_name_01"
+	                                    android:layout_width="wrap_content"
+	                                    android:layout_height="wrap_content"
+	                                    android:layout_below="@id/club_mark_01"
+	                                    android:layout_centerHorizontal="true"
+	                                    android:text="@string/clubname"
+	                                    android:textColor="@color/white"
+	                                    android:textSize="15sp" />
+	                            </RelativeLayout>
+	
+	                            <RelativeLayout
+	                                android:layout_width="0dp"
+	                                android:layout_height="wrap_content"
+	                                android:layout_gravity="center"
+	                                android:layout_weight="0.2" >
+	
+	                                <TextView
+	                                    android:id="@+id/game_time"
+	                                    android:layout_width="wrap_content"
+	                                    android:layout_height="wrap_content"
+	                                    android:layout_centerHorizontal="true"
+	                                    android:layout_centerVertical="true"
+	                                    android:paddingBottom="5dp"
+	                                    android:paddingRight="1dp"
+	                                    android:text="17:00"
+	                                    android:textColor="@color/yellow"
+	                                    android:textSize="16sp" />
+	                            </RelativeLayout>
+	
+	                            <RelativeLayout
+	                                android:layout_width="0dp"
+	                                android:layout_height="wrap_content"
+	                                android:layout_marginBottom="25dp"
+	                                android:layout_weight="0.4" >
+	
+	                                <com.goalgroup.ui.view.CircularImageView
+	                                    android:id="@+id/club_mark_02"
+	                                    android:layout_width="55dp"
+	                                    android:layout_height="55dp"
+	                                    android:layout_centerHorizontal="true"
+	                                    android:contentDescription="@string/img_desc_empty"
+	                                    app:border="true"
+	                                    app:border_color="@color/pattern_dark_gray"
+	                                    app:border_width="1dp"
+	                                    app:shadow="true" />
+	
+	                                <TextView
+	                                    android:id="@+id/club_name_02"
+	                                    android:layout_width="wrap_content"
+	                                    android:layout_height="wrap_content"
+	                                    android:layout_below="@id/club_mark_02"
+	                                    android:layout_centerHorizontal="true"
+	                                    android:text="@string/clubname"
+	                                    android:textColor="@color/white"
+	                                    android:textSize="15sp" />
+	                            </RelativeLayout>
+	                        </LinearLayout>
+	                    </FrameLayout>
+	
+	                    <LinearLayout
+	                        android:layout_width="0dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="0.1" >
+	                    </LinearLayout>
+	                </LinearLayout>
+	
+	                <TextView
+	                    android:id="@+id/game_date"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_alignParentTop="true"
+	                    android:paddingRight="10dp"
+	                    android:text="02-18/周三 17:30"
+	                    android:textColor="@color/black"
+	                    android:textSize="14sp" />
+	            </RelativeLayout>
+				<RelativeLayout
+	                android:id="@+id/stadium_area_layout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/relative_layout"
+	                android:layout_marginBottom="15dp"
+	                android:background="@drawable/green_bottom_panel"
+	                android:padding="5dp" >
+	            <TextView
+	                android:id="@+id/stadium"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="right"
+	                android:layout_alignParentRight="true"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:text="@string/stadium"
+	                android:textColor="@color/white"
+	                android:textSize="18sp" />
+	            </RelativeLayout>
+	            
+	        </RelativeLayout>
+	
+	    </LinearLayout>
+	    
+    </ScrollView>
+    
+	<Button
+        android:id="@+id/update"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_green_circle"
+        android:text="@string/ok"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+    
+	<com.goalgroup.ui.view.GgListView
+            android:id="@+id/player_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scroll_view"
+            android:layout_above="@id/update"
+            android:divider="@color/white"
+            android:dividerHeight="0dp" />
+	
+</RelativeLayout>

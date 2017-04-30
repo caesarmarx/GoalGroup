@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    
+    <include
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_main" />
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view" >
+	    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+		    <RelativeLayout
+		        android:id="@+id/player_market_ly"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/item_top_selector" >
+                
+		        <ImageView
+		            android:id="@+id/player_search"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/player_search"
+	                android:contentDescription="@string/img_desc_empty" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_toRightOf="@id/player_search"
+		            android:layout_centerVertical="true"
+		            android:text="@string/player_market"
+		            android:textSize="16sp"
+		            android:textColor="#000000" />
+		        
+		        <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/pattern_dark_gray" />
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/club_market_ly"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/item_bottom_selector" >
+		        
+		        <ImageView
+		            android:id="@+id/club_search"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/club_search"
+	                android:contentDescription="@string/img_desc_empty" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@id/club_search"
+		            android:text="@string/club_market"
+		            android:textSize="16sp"
+		            android:textColor="#000000" />
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/invitation_list_ly"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/item_top_selector" >
+		        
+		        <ImageView
+		            android:id="@+id/inv_list"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/inv_list"
+	                android:contentDescription="@string/img_desc_empty" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@id/inv_list"
+		            android:text="@string/invitation"
+		            android:textSize="16sp"
+		            android:textColor="@color/black" />
+		        
+		        <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/pattern_dark_gray" />
+		        
+			         <TextView
+			            android:id="@+id/inv_count"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginRight="15dp"
+			            android:layout_centerVertical="true"
+			            android:layout_alignParentRight="true"
+			            android:paddingLeft="5dp"
+		            	android:paddingRight="5dp"
+			            android:text="9"
+			            android:textColor="@color/white"
+			            android:textSize="14sp" 
+			            android:background="@drawable/number"/>
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/temp_inv_list_ly"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/item_bottom_selector" >
+		         
+		        <ImageView
+		            android:id="@+id/temp_inv_list"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/temp_inv_list"
+	                android:contentDescription="@string/img_desc_empty" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@id/temp_inv_list"
+		            android:text="@string/temp_invitation"
+		            android:textSize="16sp"
+		            android:textColor="#000000" />
+		        
+		        <TextView
+		            android:id="@+id/temp_inv_count"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		           	android:layout_marginRight="15dp"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentRight="true"
+		            android:paddingLeft="5dp"
+		            android:paddingRight="5dp"
+		            android:text="99"
+		            android:textColor="@color/white"
+		            android:textSize="14sp"
+		            android:background="@drawable/number" />
+		    </RelativeLayout>
+	    
+	    </LinearLayout>
+	    
+	    <ScrollView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top|right" >
+	        
+	        <include
+		        android:id="@+id/popup_menu"
+		        android:layout_width="match_parent"
+		        android:layout_height="45dp"
+		        layout="@layout/main_popup_menu"
+		        android:visibility="gone" />
+	        
+	    </ScrollView>
+	    
+    </FrameLayout>
+    
+</RelativeLayout>

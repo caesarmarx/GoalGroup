@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/list_cell_bg"
+        android:orientation="horizontal" >
+        
+	    <RelativeLayout
+	        android:id="@+id/ly_chatroom_list_photo"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.2" >
+	        
+	        <ImageView
+	            android:id="@+id/chatroom_list_photo"
+	            android:layout_width="45dp"
+	            android:layout_height="45dp"
+	            android:layout_centerInParent="true"
+	            android:contentDescription="@string/img_desc_empty" />
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5" >
+	        
+	        <TextView
+	            android:id="@+id/chatroom_list_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:text="@string/alias"
+	            android:textSize="18sp"
+	            android:textColor="#000000" />
+	        
+	        <TextView
+	            android:id="@+id/chatroom_list_lastchat"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentBottom="true"
+	            android:text="@string/chat_content"
+	            android:textSize="14sp"
+	            android:textColor="#585858" />
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.3" >
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dp"
+	            android:layout_centerVertical="true"
+	            android:orientation="vertical"
+	            android:gravity="right" >
+	            
+		        <TextView
+		            android:id="@+id/chatroom_list_lastdate"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/chat_lastdate"
+		            android:textSize="14sp"
+		            android:textColor="#585858" />
+		        
+		        <TextView
+		            android:id="@+id/chatroom_list_lasttime"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/chat_lasttime"
+		            android:textSize="14sp"
+		            android:textColor="#585858" />
+	        
+	        </LinearLayout>
+	        
+	    </RelativeLayout>
+    
+    </LinearLayout>
+    
+</LinearLayout>

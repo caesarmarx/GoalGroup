@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pattern_gray" >
+    
+    <include
+        android:id="@+id/chat_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_common" />
+    
+    <LinearLayout
+        android:id="@+id/chat_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+        
+	    <RelativeLayout
+	        android:id="@+id/chat_bottom_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@color/normal_background"
+	        android:gravity="center_vertical" >
+	        
+	        <FrameLayout
+	            android:id="@+id/btn_view_more_ly"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="10dp" >
+
+	            <Button
+	                android:id="@+id/btn_send"
+	                android:layout_width="50dp"
+	                android:layout_height="30dp"
+	                android:background="@drawable/btn_green_circle"
+	                android:text="@string/send"
+	                android:textColor="@color/white"
+	                android:textSize="16sp"
+	                android:visibility="gone" />
+
+	            <ImageButton
+	                android:id="@+id/btn_view_panel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/chat_more" />
+	        </FrameLayout>
+	        
+	        <com.goalgroup.ui.view.xEditText
+	            android:id="@+id/edit_chat_content"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:layout_centerVertical="true"
+	            android:layout_centerInParent="true"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_toLeftOf="@id/btn_view_more_ly"
+	            android:layout_toRightOf="@+id/btn_voice"
+	            android:gravity="left|center_vertical"
+	            android:textColor="#000000"
+	            android:textSize="16sp" />
+
+	        <ImageButton
+	            android:id="@+id/btn_voice"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="10dp"
+	            android:background="@drawable/chat_voice"
+	            android:textColor="#ffffff"
+	            android:textSize="16sp" />
+
+	        <ImageButton
+	            android:id="@+id/btn_emoticon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignRight="@id/edit_chat_content"
+	            android:layout_marginRight="5dp"
+	            android:background="@drawable/chat_func_emote"
+	            android:textSize="16sp" />
+	        
+	    </RelativeLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/chat_bottom_panel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/normal_background"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+	        
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/pattern_gray"
+	            android:orientation="vertical" />
+	        
+	        <LinearLayout
+	            android:id="@+id/chat_func_panel"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_marginBottom="20dp"
+	            android:layout_marginTop="20dp"
+	            android:background="@color/normal_background"
+	            android:orientation="horizontal" />
+			
+	        <LinearLayout
+	            android:id="@+id/emoticon_panel"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginTop="10dp"
+	            android:background="@color/normal_background"
+	            android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+				android:paddingTop="15dp"
+                android:visibility="gone" >
+
+	                <Button
+	                    android:id="@+id/back_emoticon"
+	                    android:layout_width="20dp"
+	                    android:layout_height="40dp"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginRight="10dp"
+	                    android:background="@drawable/back_emoticon" 
+	                    android:layout_gravity="center_vertical"
+	                    android:visibility="gone"/>
+
+	                <RelativeLayout
+	                      android:layout_width="0dp"
+	       				  android:layout_height="wrap_content" 
+	        			  android:layout_weight="1" >
+
+	                    <LinearLayout
+	                        android:id="@+id/frame_grid"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center_vertical"
+	                        android:layout_marginLeft="20dp"
+	                        android:layout_marginRight="20dp"
+	                        android:orientation="vertical" >
+
+	                        <GridView
+	                            android:id="@+id/emoticon_grid1"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:horizontalSpacing="5dp"
+	                            android:verticalSpacing="5dp"
+	                            android:numColumns="7"
+	                            >
+	                        </GridView>
+
+	                        <GridView
+	                            android:id="@+id/emoticon_grid2"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:numColumns="7"
+	                            android:horizontalSpacing="5dp"
+	                            android:verticalSpacing="5dp"
+	                            android:visibility="gone" >
+	                        </GridView>
+	                    </LinearLayout>
+
+	                    <Button
+	                        android:id="@+id/delete_btn"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignBottom="@+id/frame_grid"
+	                        android:layout_alignRight="@+id/frame_grid"
+	                        android:background="@drawable/del_emoticon"
+	                        android:layout_marginRight="20dp"
+	                        android:visibility="gone"
+	                        />
+	                </RelativeLayout>
+
+	                <Button
+	                    android:id="@+id/fore_emoticon"
+	                    android:layout_width="20dp"
+	                    android:layout_height="40dp"
+	                    android:layout_marginRight="10dp"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_gravity="center_vertical"
+	                    android:background="@drawable/forward_emoticon"
+	                    android:visibility="gone" />
+            	</LinearLayout>
+            	
+	        	<RelativeLayout
+	        	    android:id="@+id/rec_panel"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="fill_parent" >
+	                
+	        	    <FrameLayout
+	        	        android:layout_width="wrap_content"
+	        	        android:layout_height="wrap_content"
+	        	        android:layout_centerInParent="true" >
+	                    
+	        	        <Button
+					        android:id="@+id/btn_rec_start"
+					        android:layout_width="200dp"
+					        android:layout_height="wrap_content"
+					        android:layout_margin="5dp"
+					        android:background="@drawable/btn_green_circle"
+					        android:text=""
+					        android:textColor="#ffffff"
+					        android:textSize="16sp" />
+	        	        
+	        	        <ImageView
+	        	            android:id="@+id/img_rec_mark"
+	        	            android:layout_width="35dp"
+	        	            android:layout_height="35dp"
+	        	            android:layout_gravity="center"
+	        	            android:background="@drawable/rec_mark" />
+	        	        
+	        	    </FrameLayout>
+	        	    
+	        	    <FrameLayout
+	        	        android:layout_width="wrap_content"
+	        	        android:layout_height="wrap_content"
+	        	        android:layout_alignParentRight="true" >
+	                    
+	        	        <Button
+	        	            android:id="@+id/btn_rec_cancel"
+	        	            android:layout_width="50dp"
+	        	            android:layout_height="wrap_content"
+	        	            android:layout_margin="5dp"
+	        	            android:background="@drawable/btn_gray_circle"
+	        	            android:text=""
+	        	            android:textColor="#ffffff"
+	        	            android:textSize="16sp"
+	        	            android:visibility="gone" />
+	        	        
+	        	        <ImageView
+	        	            android:id="@+id/img_rec_cancel"
+	        	            android:layout_width="35dp"
+	        	            android:layout_height="35dp"
+	        	            android:layout_gravity="center"
+	        	            android:background="@drawable/rec_cancel"
+	        	            android:visibility="gone" />
+	        	        
+	        	    </FrameLayout>
+	        	    
+	        	</RelativeLayout>
+            </LinearLayout>
+	</LinearLayout>
+
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_top_view"
+        android:layout_above="@id/chat_menu" >
+	    
+	    <ListView
+	        android:id="@+id/chat_history"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:divider="@null"
+		    android:dividerHeight="5dp"
+		    android:scrollbarStyle="outsideOverlay"
+		    android:cacheColorHint="#0000" />
+	    
+	    <ScrollView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top|right" >
+	        
+	        <LinearLayout
+	            android:id="@+id/club_meeting_popup_menu"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	                
+	            <RelativeLayout
+	                android:layout_width="150dp"
+				    android:layout_height="40dp"
+				    android:layout_marginTop="1dp" >
+	            
+		            <Button
+		                android:id="@+id/club_meeting_mnu_club_members"
+		                android:layout_width="match_parent"
+	        			android:layout_height="match_parent"
+		                android:background="@drawable/btn_green_top"
+		                android:gravity="center"
+		                android:padding="3dp"
+		        		android:paddingLeft="10dp"
+		                android:text="@string/club_members"
+		                android:textColor="@color/white"
+		                android:textSize="16sp" />
+		            
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:background="@drawable/move_next"
+				        android:layout_marginRight="10dp" />
+	            
+	            </RelativeLayout>
+	            
+	            <RelativeLayout
+	                android:layout_width="150dp"
+				    android:layout_height="40dp"
+				    android:layout_marginTop="1dp" >
+	            
+		            <Button
+		                android:id="@+id/club_meeting_mnu_club_infos"
+		                android:layout_width="match_parent"
+	        			android:layout_height="match_parent"
+		                android:background="@drawable/btn_green_top"
+		                android:gravity="center"
+		                android:padding="3dp"
+		        		android:paddingLeft="10dp"
+		                android:text="@string/club_infos"
+		                android:textColor="@color/white"
+		                android:textSize="16sp" />
+		            
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:background="@drawable/move_next"
+				        android:layout_marginRight="10dp" />
+		            
+				</RelativeLayout>
+				
+	            <RelativeLayout
+	                android:layout_width="150dp"
+				    android:layout_height="40dp"
+				    android:layout_marginTop="1dp" >
+	            
+		            <Button
+		                android:id="@+id/club_meeting_mnu_edit_game"
+		                android:layout_width="match_parent"
+	        			android:layout_height="match_parent"
+		                android:background="@drawable/btn_green_top"
+		                android:gravity="center"
+		                android:padding="3dp"
+		        		android:paddingLeft="10dp"
+		                android:text="@string/edit_game_menu"
+		                android:textColor="@color/white"
+		                android:textSize="16sp" />
+		            
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:background="@drawable/move_next"
+				        android:layout_marginRight="10dp" />
+		            
+				</RelativeLayout>
+	           
+	            <RelativeLayout
+	                android:layout_width="150dp"
+				    android:layout_height="40dp"
+				    android:layout_marginTop="1dp" >
+	            
+		            <Button
+		                android:id="@+id/club_meeting_mnu_settings"
+		                android:layout_width="match_parent"
+	        			android:layout_height="match_parent"
+		                android:background="@drawable/btn_green_top"
+		                android:gravity="center"
+		                android:padding="3dp"
+		        		android:paddingLeft="10dp"
+		                android:text="@string/settings"
+		                android:textColor="@color/white"
+		                android:textSize="16sp" />
+		            
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:background="@drawable/move_next"
+				        android:layout_marginRight="10dp" />
+		            
+				</RelativeLayout>
+				
+	            <RelativeLayout
+	                android:layout_width="150dp"
+				    android:layout_height="40dp"
+				    android:layout_marginTop="1dp" >
+	            
+		            <Button
+		                android:id="@+id/club_break_up"
+		                android:layout_width="match_parent"
+	        			android:layout_height="match_parent"
+		                android:background="@drawable/btn_green_top"
+		                android:gravity="center"
+		                android:padding="3dp"
+		        		android:paddingLeft="10dp"
+		                android:text="@string/breakup_club"
+		                android:textColor="@color/white"
+		                android:textSize="16sp" />
+		            
+		            <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:background="@drawable/move_next"
+				        android:layout_marginRight="10dp" />
+		            
+				</RelativeLayout>
+				
+	        </LinearLayout>
+	        
+	    </ScrollView>
+	    
+    </FrameLayout>
+
+</RelativeLayout>

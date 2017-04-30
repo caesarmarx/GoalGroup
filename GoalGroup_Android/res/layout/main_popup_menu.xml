@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/social_popup_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:layout_gravity="left|top"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="160dp"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="1dp"
+	    android:visibility="gone" >
+	    
+	    <Button
+	        android:id="@+id/social_mnu_add_bbs"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	       	android:gravity="center"
+	        android:background="@drawable/btn_green_top"
+	        android:padding="3dp"
+	        android:paddingLeft="10dp"
+	        android:text="@string/create_bbs"
+	        android:textColor="@color/white"
+	        android:textSize="16sp" />
+	    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/move_next"
+	        android:layout_marginRight="10dp" />
+	    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="160dp"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="1dp" >
+	    
+	    <Button
+	        android:id="@+id/social_mnu_new_challenge"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	       	android:paddingLeft="10dp"
+	        android:gravity="center"
+	        android:padding="3dp"
+	        android:text="@string/create_challenge"
+	        android:textColor="@color/white"
+	        android:background="@drawable/btn_green_top"
+	        android:textSize="16sp" />
+	    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/move_next"
+	        android:layout_marginRight="10dp" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="160dp"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="1dp" >
+	    
+	    <Button
+        android:id="@+id/social_mnu_create_club"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       	android:paddingLeft="10dp"
+        android:background="@drawable/btn_green_top"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/create_club"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+	    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/move_next"
+	        android:layout_marginRight="10dp" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="160dp"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="1dp" >
+	    
+	    <Button
+        android:id="@+id/social_mnu_settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       	android:paddingLeft="10dp"
+        android:background="@drawable/btn_green_top"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/individual_settings"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/move_next"
+	        android:layout_marginRight="10dp" />
+    
+    </RelativeLayout>
+    
+</LinearLayout>

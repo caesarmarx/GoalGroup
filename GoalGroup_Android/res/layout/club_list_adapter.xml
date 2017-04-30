@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/pattern_gray"
+        android:orientation="horizontal" >
+        
+	    <RelativeLayout
+	        android:id="@+id/ly_club_list_mark"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp" >
+	        
+	        <com.goalgroup.ui.view.CircularImageView
+	            android:id="@+id/club_list_mark"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:layout_centerInParent="true"
+	            android:contentDescription="@string/img_desc_empty"
+	            app:border="true"
+	            app:border_width="2dp"
+	            app:border_color="@color/pattern_dark_gray"
+	            app:shadow="true" />
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.8" >
+	        
+	        <TextView
+	            android:id="@+id/club_list_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:text="@string/clubname"
+	            android:textSize="22sp"
+	            android:textColor="#000000" />
+
+	        <RelativeLayout
+	            android:id="@+id/area_unread_count"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true" >
+	            
+	            <ImageView
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_centerInParent="true"
+	                android:background="@drawable/market_item_red"
+	                android:contentDescription="@string/img_desc_empty" />
+	            
+	            <TextView
+		            android:id="@+id/unread_count"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:text="@string/view_more_mark"
+		            android:textColor="@color/white"
+		            android:textSize="12sp" />
+	        </RelativeLayout>
+	        
+	    </RelativeLayout>
+    
+    </LinearLayout>
+    
+</LinearLayout>

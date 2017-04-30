@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pattern_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/total_area_bbs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@drawable/white_bg_circle">
+
+        <ImageView
+	         android:id="@+id/bbs_image"
+	         android:layout_width="160dp"
+	         android:layout_height="200dp"
+	         android:scaleType="fitXY" />
+        <TextView
+            android:id="@+id/bbs_tv_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bbs_image"
+            android:gravity="fill_horizontal"
+            android:paddingLeft="7dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bbs_tv_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bbs_image"
+            android:gravity="fill_horizontal"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

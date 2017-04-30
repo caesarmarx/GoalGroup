@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pattern_gray" >
+    
+    <include
+        android:id="@+id/about_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_common" />
+    
+    <ImageView 
+        android:id="@+id/about_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/logo"
+        android:layout_below="@id/about_top_view"/>
+    
+    <Button
+        android:id="@+id/update_app"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_green"
+        android:text="@string/update"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+    
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/update_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/ver_sample"
+        android:textSize="28sp"
+        android:textColor="@color/white" />
+    
+</RelativeLayout>

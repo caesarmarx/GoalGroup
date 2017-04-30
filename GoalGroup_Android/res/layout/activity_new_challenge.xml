@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    
+    <include
+        android:id="@+id/new_challenge_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_common" />
+    
+    <Button
+        android:id="@+id/send_challenge"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/chat_alarm_ly"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_green_circle"
+        android:text="@string/announce"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/new_challenge_top_view"
+        android:layout_above="@id/send_challenge" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+                android:id="@+id/area_own_team"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_top_selector" >
+                
+                <TextView
+                    android:id="@+id/new_chall_info_01_title"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:text="@string/team_host_label"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_gray" />
+                
+                <ImageView
+                    android:id="@+id/new_chall_info_01_ico"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="15dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/new_chall_master"
+	                android:contentDescription="@string/img_desc_empty" />
+                
+                <TextView
+                    android:id="@+id/new_chall_info_01_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/new_chall_info_01_title"
+                    android:layout_toLeftOf="@id/new_chall_info_01_ico"
+                    android:text="@string/none"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/pattern_dark_gray" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/area_opponent_team"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/item_bottom_selector" >
+                
+                <TextView
+                    android:id="@+id/new_chall_info_02_title"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:text="@string/team_invt_label"
+                    android:textSize="16sp"
+                    android:layout_toLeftOf="@id/area_opponent_team"
+                    android:textColor="@color/black_gray" />
+                
+                <ImageView
+                    android:id="@+id/new_chall_info_02_ico"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="15dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/new_chall_opp"
+	                android:contentDescription="@string/img_desc_empty" />
+                
+                <TextView
+                    android:id="@+id/new_chall_info_02_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/new_chall_info_02_title"
+                    android:layout_toLeftOf="@id/new_chall_info_02_ico"
+                    android:text="@string/none"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                
+                <EditText
+                    android:id="@+id/new_game_oppo_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/new_chall_info_02_title"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                     />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/area_chall_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_top_selector" >
+                
+                <TextView
+                    android:id="@+id/new_chall_info_03_title"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:text="@string/game_date_label"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_gray" />
+                
+                <ImageView
+                    android:id="@+id/new_chall_info_03_ico"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="15dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/new_chall_date"
+	                android:contentDescription="@string/img_desc_empty" />
+                
+                <TextView
+                    android:id="@+id/chall_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/new_chall_info_03_title"
+                    android:layout_toLeftOf="@id/new_chall_info_03_ico"
+                    android:text="@string/date_value"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/pattern_dark_gray" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/area_chall_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/item_bottom_selector" >
+                
+                <TextView
+                    android:id="@+id/new_chall_info_04_title"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:text="@string/game_time_label"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_gray" />
+                
+                <ImageView
+                    android:id="@+id/new_chall_info_04_ico"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="15dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/new_chall_time"
+	                android:contentDescription="@string/img_desc_empty" />
+                
+                <TextView
+                    android:id="@+id/chall_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/new_chall_info_04_title"
+                    android:layout_toLeftOf="@id/new_chall_info_04_ico"
+                    android:text="@string/time_value"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/area_player_count_mode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/item_normal_selector" >
+                
+                <TextView
+                    android:id="@+id/new_chall_info_05_title"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:text="@string/players_mode_label"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_gray" />
+                
+                <ImageView
+                    android:id="@+id/new_chall_info_05_ico"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="15dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/new_chall_player_num"
+	                android:contentDescription="@string/img_desc_empty" />
+                
+                <TextView
+                    android:id="@+id/player_count_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/new_chall_info_05_title"
+                    android:layout_toLeftOf="@id/new_chall_info_05_ico"
+                    android:text="@string/none"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/area_stadium_area"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_top_selector" >
+                
+                <TextView
+                    android:id="@+id/chall_stadium_area_title"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:text="@string/chall_stadium_area_label"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_gray" />
+                
+                <ImageView
+                    android:id="@+id/chall_stadium_area_ico"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="15dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/new_chall_stadium"
+	                android:contentDescription="@string/img_desc_empty" />
+                
+                <TextView
+                    android:id="@+id/chall_stadium_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/chall_stadium_area_title"
+                    android:layout_toLeftOf="@id/chall_stadium_area_ico"
+                    android:text="@string/none"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/pattern_dark_gray" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/area_stadium_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/item_bottom_selector" >
+                
+                <TextView
+                    android:id="@+id/chall_stadium_address_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/chall_stadium_address_label"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_gray" />
+                
+                <EditText
+                    android:id="@+id/chall_stadium_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/chall_stadium_address_title"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/area_money_split_mode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/item_normal_selector" >
+                
+                <TextView
+                    android:id="@+id/new_chall_info_07_title"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:text="@string/payment_mode_label"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_gray" />
+                
+                <ImageView
+                    android:id="@+id/new_chall_info_07_ico"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="15dp"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentRight="true"
+	                android:background="@drawable/new_chall_money_split"
+	                android:contentDescription="@string/img_desc_empty" />
+                
+                <TextView
+                    android:id="@+id/money_split_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/new_chall_info_07_title"
+                    android:layout_toLeftOf="@id/new_chall_info_07_ico"
+                    android:text="@string/payment_mode_01"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+</RelativeLayout>

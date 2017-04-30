@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/pattern_green" >    
+    
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/challenge_list"
+        android:textSize="28sp"
+        android:textColor="#ffffff" />
+    
+    <FrameLayout
+        android:id="@+id/top_challenge_view_more"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+        
+        <Button
+            android:id="@+id/top_view_more"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_green"
+            android:layout_gravity="center" />
+        
+	    <ImageView
+	        android:id="@+id/top_view_more_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/view_more"
+	        android:contentDescription="@string/img_desc_empty" />
+    
+    </FrameLayout>
+    
+    <FrameLayout
+        android:id="@+id/top_challenge_view_alarm"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/top_challenge_view_more" >
+        
+        <Button
+            android:id="@+id/top_view_alarmas"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_green"
+            android:layout_gravity="center" />
+        
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/callout"
+	        android:contentDescription="@string/img_desc_empty" />
+	    
+	    <RelativeLayout
+	        android:id="@+id/top_challenge_view_alarm_new"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center|bottom"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="10dp" >
+	    
+ 		    <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:background="@drawable/callout_new_bg"
+		        android:contentDescription="@string/img_desc_empty" />
+		    
+		    <TextView
+		        android:id="@+id/callout_number_view"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:textSize="10sp"
+		        android:textColor="@color/number_red" />
+	    
+	    </RelativeLayout>
+    
+    </FrameLayout>
+    
+</RelativeLayout>

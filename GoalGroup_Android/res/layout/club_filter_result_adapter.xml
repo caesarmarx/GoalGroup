@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<FrameLayout
+	    android:id="@+id/club_market_total" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+	    android:background="@color/normal_background" >
+	    
+	    <LinearLayout
+	        android:id="@+id/club_area"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/club_pane"
+	        android:orientation="horizontal" >
+	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+	            	<com.goalgroup.ui.view.CircularImageView
+	                android:id="@+id/club_mark"
+	                android:layout_width="60dp"
+	                android:layout_height="60dp"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:contentDescription="@string/img_desc_empty"
+	                app:border="true"
+	                app:border_width="2dp"
+	                app:border_color="@color/pattern_dark_gray"
+	                app:shadow="true" />
+	            	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_vertical"
+	                android:layout_margin="3dp"
+	                 >
+	
+	                <TextView
+	                    android:id="@+id/club_name"
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="0.4"
+	                    android:text="@string/clubname"
+	                    android:singleLine="true"
+	                    android:textColor="@color/white"
+	                    android:textSize="18sp" />
+	
+	                <LinearLayout
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="0.6"
+	                    android:layout_marginRight="10dp"
+	                    android:gravity="center"
+	                    android:orientation="horizontal" >
+	
+	                    <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/club_man_ico" />
+	
+	                    <TextView
+	                        android:id="@+id/club_member_count"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="5dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="10"
+	                        android:textColor="@color/white"
+	                        android:textSize="14sp" />
+	
+	                    <TextView
+	                        android:id="@+id/club_points"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="20dp"
+	                        android:ellipsize="end"
+	                        android:maxLines="1"
+	                        android:text="活跃度 "
+	                        android:textColor="@color/white"
+	                        android:textSize="15sp" />
+	
+	                    <ImageView
+	                        android:id="@+id/star01"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="20dp"
+	                        android:src="@drawable/star"
+	                        android:visibility="gone" />
+	
+	                    <ImageView
+	                        android:id="@+id/star02"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/star"
+	                        android:visibility="gone" />
+	
+	                    <ImageView
+	                        android:id="@+id/star03"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/star"
+	                        android:visibility="gone" />
+	                </LinearLayout>
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="20dp"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="left"
+	                    android:text="@string/aver_ages"
+	                    android:textColor="@color/white"
+	                    android:textStyle="bold"
+	                    android:textSize="14sp" />
+	
+	                <TextView
+	                    android:id="@+id/club_aver_ages"
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_weight="0.7"
+	                    android:ellipsize="end"
+	                    android:maxLines="1"
+	                    android:text="22岁"
+	                    android:textColor="@color/white"
+	                    android:textSize="14sp" />
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="left"
+	                    android:text="@string/play_dates"
+	                    android:textColor="@color/white"
+	                    android:textStyle="bold"
+	                    android:textSize="14sp" />
+	
+	                <TextView
+	                    android:id="@+id/club_dates"
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_weight="0.7"
+	                    android:ellipsize="end"
+	                    android:maxLines="1"
+	                    android:text="周一，周二，周三，周四，周五，周六，周日"
+	                    android:textColor="@color/white"
+	                    android:textSize="14sp" />
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="left"
+	                    android:text="@string/play_areas"
+	                    android:textColor="@color/white"
+	                    android:textStyle="bold"
+	                    android:textSize="14sp" />
+	
+	                <TextView
+	                    android:id="@+id/club_areas"
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_weight="0.7"
+	                    android:ellipsize="end"
+	                    android:singleLine="true"
+	                    android:text="大连各个区"
+	                    android:textColor="@color/white"
+	                    android:textSize="14sp" />
+	            </LinearLayout>
+	        </LinearLayout>
+	    
+	    </LinearLayout>
+	    
+	    <LinearLayout
+            android:id="@+id/club_market_funcs"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="vertical" >
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/more_menu_top" >
+                    
+	                <ImageView
+	                    android:id="@+id/market_join_club"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:background="@drawable/market_club1"
+	                    android:contentDescription="@string/img_desc_empty" />
+                
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/more_menu_bottom" >
+                    
+	                <ImageView
+	                    android:id="@+id/market_chall_club"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:background="@drawable/market_club2"
+	                    android:contentDescription="@string/img_desc_empty" />
+                
+                </RelativeLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+	    
+	</FrameLayout>
+</LinearLayout>

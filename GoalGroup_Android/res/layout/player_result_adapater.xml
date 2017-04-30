@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="30dp"
+        android:background="@drawable/player_point" >
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:maxWidth="50dp"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/photo"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/green_bg_circle"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/alias"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <com.goalgroup.ui.view.CircularImageView
+            android:id="@+id/photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/img_desc_empty"
+            app:border="true"
+            app:border_color="@color/white"
+            app:border_width="2dp"
+            app:shadow="true" />
+        
+        <TextView 
+            android:id="@+id/goal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_name"
+            android:gravity="center_vertical|right"
+            android:background="@drawable/player_goal_bg"
+            android:paddingRight="5dp"
+            android:text="@string/goal"
+            android:textSize="12sp"
+            android:textColor="@color/black_gray" />
+        
+        <TextView 
+            android:id="@+id/assist_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/goal_label"
+            android:gravity="center_vertical|right"
+            android:background="@drawable/player_assist_bg"
+            android:paddingRight="5dp"
+            android:text="@string/assist"
+            android:textSize="12sp"
+            android:textColor="@color/black_gray" />
+        
+        <TextView 
+            android:id="@+id/point_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/assist_label"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical|right"
+            android:background="@drawable/player_point_bg"
+            android:text="@string/point"
+            android:textSize="12sp"
+            android:textColor="@color/black_gray" />
+
+        <TextView
+            android:id="@+id/goal_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/goal_label"
+            android:layout_alignRight="@id/goal_label"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="@color/black_gray"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/assist_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/assist_label"
+            android:layout_alignRight="@id/assist_label"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="@color/black_gray"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/point_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/point_label"
+            android:layout_alignRight="@id/point_label"
+            android:gravity="right"
+            android:paddingRight="30dp"
+            android:text="0"
+            android:textColor="@color/black_gray"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    
+</FrameLayout>

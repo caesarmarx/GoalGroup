@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<FrameLayout 
+	    android:id="@+id/player_area"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="@color/white" >
+
+		<LinearLayout
+		    android:id="@+id/player_market_total"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@drawable/player_pane"
+		    android:orientation="horizontal" >
+
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="10dp"
+		        android:orientation="vertical" >
+
+		        <com.goalgroup.ui.view.CircularImageView
+		            android:id="@+id/player_photo"
+		            android:layout_width="60dp"
+		            android:layout_height="60dp"
+		            android:scaleType="fitXY"
+		            app:border="true"
+		            app:border_color="@color/white"
+		            app:border_width="2dp"
+		            app:shadow="true" />
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="5dp"
+		            android:orientation="horizontal" >
+
+		            <TextView
+		                android:id="@+id/player_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/alias"
+		                android:textColor="@color/white"
+		                android:textSize="16sp" />
+		        </LinearLayout>
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="5dp"
+		            android:orientation="horizontal" >
+
+		            <TextView
+		                android:id="@+id/player_base_infos_age"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.35"
+		                android:ellipsize="end"
+		                android:maxLines="1"
+		                android:text="年龄: 22岁 "
+		                android:textColor="@color/white"
+		                android:textSize="14sp" />
+
+		            <TextView
+		                android:id="@+id/player_base_infos_term"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.65"
+		                android:ellipsize="end"
+		                android:maxLines="1"
+		                android:text="球龄: 3年"
+		                android:textColor="@color/white"
+		                android:textSize="14sp" />
+		        </LinearLayout>
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="5dp"
+		            android:orientation="horizontal" >
+
+		            <TextView
+		                android:id="@+id/player_base_infos_height"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.35"
+		                android:ellipsize="end"
+		                android:maxLines="1"
+		                android:text="身高: 168"
+		                android:textColor="@color/white"
+		                android:textSize="14sp" />
+
+		            <TextView
+		                android:id="@+id/player_base_infos_weight"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.65"
+		                android:ellipsize="end"
+		                android:maxLines="1"
+		                android:text="体重: 70"
+		                android:textColor="@color/white"
+		                android:textSize="14sp" />
+		        </LinearLayout>
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="5dp"
+		            android:orientation="horizontal" >
+
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:gravity="left"
+		                android:text="@string/player_position_02"
+		                android:textColor="@color/white"
+		                android:textSize="14sp"
+		                android:textStyle="bold" />
+
+		            <TextView
+		                android:id="@+id/play_position"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="5dp"
+		                android:layout_weight="0.7"
+		                android:ellipsize="end"
+		                android:singleLine="true"
+		                android:text="前锋, 中场, 后卫"
+		                android:textColor="@color/white"
+		                android:textSize="14sp" />
+		        </LinearLayout>
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="2dp"
+		            android:orientation="horizontal" >
+
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:gravity="left"
+		                android:text="@string/play_dates"
+		                android:textColor="@color/white"
+		                android:textSize="14sp"
+		                android:textStyle="bold" />
+
+		            <TextView
+		                android:id="@+id/play_dates"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="5dp"
+		                android:layout_weight="0.7"
+		                android:ellipsize="end"
+		                android:maxLines="1"
+		                android:text="周一，周二，周三，周四，周五，周六，周日"
+		                android:textColor="@color/white"
+		                android:textSize="14sp" />
+		        </LinearLayout>
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="2dp"
+		            android:orientation="horizontal" >
+
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:gravity="left"
+		                android:text="@string/play_areas"
+		                android:textColor="@color/white"
+		                android:textSize="14sp"
+		                android:textStyle="bold" />
+
+		            <TextView
+		                android:id="@+id/play_areas"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="5dp"
+		                android:layout_weight="0.7"
+		                android:ellipsize="end"
+		                android:singleLine="true"
+		                android:text="大连各个区"
+		                android:textColor="@color/white"
+		                android:textSize="14sp" />
+		        </LinearLayout>
+		    </LinearLayout>
+		</LinearLayout>
+		
+		<LinearLayout
+            android:id="@+id/player_market_funcs"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical" >
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/more_menu_top" >
+                    
+	                <ImageView
+	                    android:id="@+id/market_recommend"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:background="@drawable/market_item1"
+	                    android:contentDescription="@string/img_desc_empty" />
+                
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/more_menu_normal" >
+                    
+	                <ImageView
+	                    android:id="@+id/market_temp_inv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:background="@drawable/market_item2"
+	                    android:contentDescription="@string/img_desc_empty" />
+                
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/more_menu_bottom" >
+                    
+	                <ImageView
+	                    android:id="@+id/market_inv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:background="@drawable/market_item3"
+	                    android:contentDescription="@string/img_desc_empty" />
+                
+                </RelativeLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+	</FrameLayout>
+</LinearLayout>

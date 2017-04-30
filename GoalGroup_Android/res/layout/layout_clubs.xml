@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    
+    <include
+        android:id="@+id/social_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_main" />
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/social_top_view" >
+        
+	    <com.goalgroup.ui.view.GgListView
+	        android:id="@+id/clubs_listview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="@color/pattern_dark_gray"
+	        android:dividerHeight="1dp" />
+	    
+	    <ScrollView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top|right" >
+	        
+	        <include
+		        android:id="@+id/popup_menu"
+		        android:layout_width="match_parent"
+		        android:layout_height="45dp"
+		        layout="@layout/main_popup_menu" />
+	        
+	    </ScrollView>
+    
+    </FrameLayout>
+    
+</RelativeLayout>

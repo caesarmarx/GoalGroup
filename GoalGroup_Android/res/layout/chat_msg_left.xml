@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pattern_gray"
+            android:textColor="@color/pattern_dark_gray" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" >
+
+            <com.goalgroup.ui.view.CircularImageView
+                android:id="@+id/iv_userhead"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/img_desc_empty"
+                android:onClick="on_click_cw_left_photo"
+                android:padding="5dp"
+                app:border="true"
+                app:border_color="@color/pattern_gray"
+                app:border_width="2dp"
+                app:shadow="true" />
+
+            <TextView
+                android:id="@+id/username"
+                style="@style/chat_text_name_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_userhead"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <com.goalgroup.ui.view.xTextView
+            android:id="@+id/chat_msg_body"
+            style="@style/chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:minHeight="32dp"
+            android:minWidth="24dp"
+            android:gravity="left|center"
+            android:clickable="true"
+            android:longClickable="false"
+            android:onClick="fullview"
+            android:text="1234"
+            android:textSize="16dp"
+            android:textColor="@color/black_gray"
+            android:background="@drawable/chatfrom_bg"
+            android:bufferType="spannable" />
+        
+        <ImageView 
+            android:id="@+id/no_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bbs_reply_number_bg"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/pb_icon"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/my_progress"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/iv_left_msg_fail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/msg_state_fail" 
+            android:contentDescription="@string/img_desc_empty"
+            android:visibility="gone" />
+        
+         <TextView
+            android:id="@+id/tv_copystate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#777"
+            android:textSize="12sp"
+            android:text="" />
+
+    </LinearLayout>
+
+</LinearLayout>

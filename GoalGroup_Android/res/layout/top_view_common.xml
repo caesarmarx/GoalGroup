@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/pattern_green" >
+    
+    <FrameLayout
+        android:id="@+id/top_btn_back_ly"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+        
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_green"
+            android:layout_gravity="center" />
+        
+	    <ImageView
+	        android:id="@+id/move_forward_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/btn_green_forward"
+	        android:contentDescription="@string/img_desc_empty" />
+    
+    </FrameLayout>
+    
+    <FrameLayout
+        android:id="@+id/top_title_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+        
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chatting_room"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:layout_marginLeft="50sp"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+        
+    </FrameLayout>
+    
+    <FrameLayout
+        android:id="@+id/top_social_view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp" >
+        
+        <Button
+            android:id="@+id/btn_view_more"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_green"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        
+        <LinearLayout 
+            android:id="@+id/view_more_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/btn_green" >
+		    <ImageView 
+				android:id="@+id/top_img"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"            
+				android:layout_gravity="center"
+			  	android:visibility="gone" 
+				android:contentDescription="@string/complete" />
+		    <TextView 
+				android:id="@+id/common_action_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/white" />
+		</LinearLayout>
+    </FrameLayout>
+    
+</RelativeLayout>

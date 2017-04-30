@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" xmlns:app="http://schemas.android.com/apk/res/com.goalgroup">
+    
+    <include
+        android:id="@+id/game_schedule_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_common" />
+    
+    <LinearLayout
+        android:id="@+id/area_result_total"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/game_schedule_top_view"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/game_result_bg" >
+            
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center">
+            
+	            <LinearLayout 
+	                android:layout_width="0dp"
+	                android:layout_weight="0.4"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:orientation="vertical">
+	            
+		            <com.goalgroup.ui.view.CircularImageView
+		                android:id="@+id/club_mark_01"
+		                android:layout_width="60dp"
+		                android:layout_height="60dp"
+		                android:layout_margin="10dp"
+		                app:border="true"
+		                app:border_width="2dp"
+		                app:border_color="@color/pattern_dark_gray"
+		                app:shadow="true" />
+	            
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.2"
+	                android:gravity="center"
+	                android:orientation="vertical" >
+	
+	                <TextView
+	                    android:id="@+id/game_result"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="0 - 0"
+	                    android:textColor="@color/black"
+	                    android:textSize="18sp" />
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:layout_width="0dp"
+	                android:layout_weight="0.4"
+	                android:gravity="center"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+	                
+		            <com.goalgroup.ui.view.CircularImageView
+		                android:id="@+id/club_mark_02"
+		                android:layout_width="60dp"
+		                android:layout_height="60dp"
+		                android:layout_margin="10dp"
+		                app:border="true"
+		                app:border_width="2dp"
+		                app:border_color="@color/pattern_dark_gray"
+		                app:shadow="true" />
+		            
+				</LinearLayout>
+            
+        	</LinearLayout>
+        
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="0.3"
+	            android:gravity="top">
+	            
+	            <LinearLayout 
+	                android:layout_width="0dp"
+	                android:layout_weight="0.4"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:orientation="vertical">
+		            
+		            <TextView
+		                android:id="@+id/club_name_01"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/clubname"
+		                android:textSize="18sp"
+		                android:textColor="@color/white" />
+	            
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.2"
+	                android:gravity="center"
+	                android:orientation="vertical" >
+	
+	                <TextView
+	                    android:id="@+id/game_result"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center"
+	                    android:text="@string/versus"
+	                    android:textColor="@color/white"
+	                    android:textSize="18sp" />
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:layout_width="0dp"
+	                android:layout_weight="0.4"
+	                android:gravity="center"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+		            
+		            <TextView
+		                android:id="@+id/club_name_02"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:gravity="center"
+		                android:text="@string/clubname"
+		                android:textSize="18sp"
+		                android:textColor="@color/white" />
+		            
+				</LinearLayout>
+	            
+	        </LinearLayout>
+        
+    	</LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/pattern_gray"
+            android:orientation="horizontal" >
+                
+            <EditText
+                android:id="@+id/result_01_01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+            
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/half_time_01"
+	            android:textSize="16sp"
+	            android:textColor="@color/white"
+	            android:background="@drawable/half_result_bg" />
+            
+			<EditText
+			    android:id="@+id/result_01_02"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="0.5"
+			    android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+			    android:gravity="center"
+			    android:inputType="number"
+			    android:text="0"
+			    android:textSize="18sp"
+			    android:textColor="@color/black" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/pattern_gray"
+            android:orientation="horizontal" >
+                
+            <EditText
+                android:id="@+id/result_02_01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+            
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/half_time_02"
+	            android:textSize="16sp"
+	            android:textColor="@color/white"
+	            android:background="@drawable/half_result_bg" />
+            
+			<EditText
+			    android:id="@+id/result_02_02"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="0.5"
+			     android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+			    android:gravity="center"
+			    android:inputType="number"
+			    android:text="0"
+			    android:textSize="18sp"
+			    android:textColor="@color/black" />
+            
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/save"
+	        android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+			android:layout_marginTop="30dp"
+            android:background="@drawable/btn_green_circle"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+     
+        
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pattern_gray"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.goalgroup">
+    
+    <include
+        android:id="@+id/read_bbs_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_view_common" />
+    
+    <LinearLayout
+        android:id="@+id/read_bbs_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dark_gray" />
+        
+	    <RelativeLayout
+	        android:id="@+id/read_bbs_bottom_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@color/normal_background"
+	        android:gravity="center_vertical" >
+	        
+	        <Button
+	            android:id="@+id/btn_send_answer"
+	            android:layout_width="50dp"
+	            android:layout_height="30dp"
+	            android:layout_alignBaseline="@+id/edit_chat_content"
+	            android:layout_alignBottom="@+id/edit_chat_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="10dp"
+	            android:background="@drawable/btn_green_circle"
+	            android:text="@string/answer"
+	            android:textColor="#ffffff"
+	            android:textSize="16sp" />
+	        
+	        <com.goalgroup.ui.view.xEditText
+	            android:id="@+id/edit_chat_content"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:layout_centerVertical="true"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_toLeftOf="@id/btn_send_answer"
+	            android:gravity="center_vertical"
+	            android:textColor="#000000"
+	            android:textSize="16sp" />
+
+	        <ImageButton
+	            android:id="@+id/btn_emoticon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignRight="@+id/edit_chat_content"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/chat_func_emote"
+	            android:layout_marginRight="5dp"
+	            android:textColor="#ffffff"
+	            android:textSize="16sp"
+	            android:visibility="gone" />
+	        
+	    </RelativeLayout>
+	    
+	    	<LinearLayout
+	            android:id="@+id/emoticon_panel"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:background="@color/normal_background"
+	            android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp"
+				android:paddingTop="30dp"
+                android:visibility="gone" >
+
+	                <Button
+	                    android:id="@+id/back_emoticon"
+	                    android:layout_width="20dp"
+	                    android:layout_height="40dp"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginRight="10dp"
+	                    android:background="@drawable/back_emoticon" 
+	                     android:layout_gravity="center_vertical"
+	                     android:visibility="gone"/>
+
+	                <RelativeLayout
+	                      android:layout_width="0dp"
+	       				  android:layout_height="wrap_content" 
+	        			  android:layout_weight="1" >
+
+	                    <LinearLayout
+	                        android:id="@+id/frame_grid"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="10dp"
+	                        android:layout_marginRight="10dp"
+	                        android:orientation="vertical" >
+
+	                        <GridView
+	                            android:id="@+id/emoticon_grid1"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:horizontalSpacing="5dp"
+	                            android:verticalSpacing="5dp"
+	                            android:numColumns="7"
+	                            >
+	                        </GridView>
+
+	                        <GridView
+	                            android:id="@+id/emoticon_grid2"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:numColumns="7"
+	                            android:horizontalSpacing="5dp"
+	                            android:verticalSpacing="5dp"
+	                            android:visibility="gone" >
+	                        </GridView>
+	                    </LinearLayout>
+
+	                    <Button
+	                        android:id="@+id/delete_btn"	
+	                        android:layout_width="40dp"
+	                        android:layout_height="20dp"
+	                        android:layout_alignBottom="@+id/frame_grid"
+	                        android:layout_alignRight="@+id/frame_grid"
+	                        android:layout_marginBottom="10dp"
+	                        android:background="@drawable/del_emoticon"
+	                        android:layout_marginRight="20dp"
+	                        />
+	                </RelativeLayout>
+
+	                <Button
+	                    android:id="@+id/fore_emoticon"
+	                    android:layout_width="20dp"
+	                    android:layout_height="40dp"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginRight="10dp"
+	                    android:layout_gravity="center_vertical"
+	                    android:background="@drawable/forward_emoticon"
+	                    android:visibility="gone" />
+            	</LinearLayout>
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/area_bbs_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/read_bbs_top_view"
+        android:layout_above="@id/read_bbs_menu"
+        android:orientation="vertical" >
+	    
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+		        
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <TextView
+                        android:id="@+id/bbs_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/bbs_user_photo"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/alias"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="16sp" />
+                    
+                    <TextView
+                        android:id="@+id/bbs_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/date_value"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_gray" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:layout_toRightOf="@id/bbs_user"
+                        android:layout_toLeftOf="@id/bbs_date"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/gray" />
+
+                    <com.goalgroup.ui.view.CircularImageView
+                        android:id="@+id/bbs_user_photo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="21dp"
+                        app:border="true"
+                        app:border_color="@color/white"
+                        app:border_width="2dp"
+                        app:shadow="true" />
+                    
+                </RelativeLayout>
+                
+            </LinearLayout>
+            
+        </FrameLayout>
+        
+        <!-- <ScrollView
+            android:id="@+id/scroll_bbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            > -->
+            
+            <!-- <LinearLayout
+                android:id="@+id/total_area_bbs"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical" >
+                
+            </LinearLayout> -->
+            
+        <!-- </ScrollView> -->
+        
+        <com.goalgroup.ui.view.GgListView
+            android:id="@+id/reply_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@color/pattern_gray"
+            android:dividerHeight="0dp" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

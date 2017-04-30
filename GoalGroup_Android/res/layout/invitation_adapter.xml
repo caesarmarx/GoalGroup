@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    <FrameLayout
+        android:id="@+id/area_total_invitation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+	    <LinearLayout
+	        android:id="@+id/area_inv_item"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:background="@color/pattern_gray"
+	        android:orientation="horizontal"
+	        android:baselineAligned="false" >
+	        
+		    <LinearLayout
+		        android:id="@+id/ly_invitation_list_photo"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="0.2"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:orientation="horizontal" >
+		        
+		        <com.goalgroup.ui.view.CircularImageView
+		            android:id="@+id/club_photo"
+		            android:layout_width="50dp"
+		            android:layout_height="50dp"
+		            android:layout_centerInParent="true"
+		            android:contentDescription="@string/img_desc_empty"
+		            app:border="true"
+	                app:border_color="@color/pattern_dark_gray"
+	                app:border_width="2dp"
+	                app:shadow="true"
+	             	/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_weight="0.8"
+		        android:orientation="vertical" >
+	
+		        <TextView
+		            android:id="@+id/club_name"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginTop="5dp"
+		            android:ellipsize="marquee"
+		            android:focusable="true"
+		            android:focusableInTouchMode="true"
+		            android:marqueeRepeatLimit="marquee_forever"
+		            android:maxLines="1"
+		            android:scrollHorizontally="true"
+		            android:singleLine="true"
+		            android:text="俱乐部1邀请您加入他们的俱乐部"
+		            android:textColor="#000000"
+		            android:textSize="18sp" />
+	
+		        <TextView
+		            android:id="@+id/inv_date"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginBottom="5dp"
+		            android:layout_marginLeft="15dp"
+		            android:text="@string/date_value"
+		            android:textColor="#585858"
+		            android:textSize="14sp" />
+		        
+		    </LinearLayout>
+		    
+	    </LinearLayout>
+    
+		<LinearLayout
+		    android:id="@+id/area_inv_funcs"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_vertical|right"
+	        android:weightSum="2"
+	        android:background="@color/white"
+	        android:orientation="horizontal"
+	        android:baselineAligned="false" >
+	        
+	        <RelativeLayout
+	            android:id="@+id/area_func_accept"
+	            android:layout_width="60dp"
+	            android:layout_height="match_parent"
+	            android:padding="5dp"
+	            android:orientation="horizontal"
+	            android:background="@color/pattern_gray" >
+	            
+	            <ImageButton
+	                android:id="@+id/inv_accept"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/invitiation_edit"
+	                android:layout_centerInParent="true"
+	                android:textSize="10sp"
+	                android:contentDescription="@string/img_desc_empty" />
+	            	        
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/area_func_delete"
+	            android:layout_width="60dp"
+	            android:layout_height="match_parent"
+	            android:padding="5dp"
+	            android:orientation="horizontal"
+	            android:background="@color/gray"
+	            android:visibility="gone" >
+	            
+	            <ImageButton
+	                android:id="@+id/inv_delete"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/invitiation_delete"
+	                android:layout_centerInParent="true"
+	                android:textSize="10sp"
+	                android:contentDescription="@string/img_desc_empty" />
+	            	        
+	        </RelativeLayout>
+	        
+	    </LinearLayout>
+    </FrameLayout>
+    
+</LinearLayout>

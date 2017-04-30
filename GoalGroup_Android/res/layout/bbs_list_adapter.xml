@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.goalgroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/date_time_ly"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="25dp" >
+        
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/date_value"
+            android:textSize="14sp"
+            android:textColor="@color/gray" />
+        
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/area_bbs_contents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/item_normal_selector"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/bbs_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/contents_pic_area"
+                    android:ellipsize="end"
+                    android:gravity="top|left"
+                    android:maxLines="3"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="70dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/bbs_content"
+                    android:textColor="#585858"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/contents_pic_area"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:background="@drawable/bbs_image" >
+                
+	                <ImageView
+	                    android:id="@+id/contents_pic"
+	                    android:layout_width="80dp"
+	                    android:layout_height="80dp"
+	                    android:layout_centerInParent="true"
+	                    android:contentDescription="@string/img_desc_empty" />
+	                
+	           	</RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+        
+	    <FrameLayout
+	        android:layout_width="wrap_content"
+	        android:layout_marginLeft="30dp"
+		    android:layout_height="70dp" >
+	
+	        <TextView
+	            android:id="@+id/user_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/bbs_name"
+	            android:paddingLeft="15dp"
+	            android:paddingRight="5dp"
+	            android:layout_marginLeft="40dp"
+	            android:layout_marginTop="20dp"
+	            android:text="@string/alias"
+	            android:textColor="@color/white"
+	            android:textSize="14sp" />
+	        
+		    <FrameLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="65dp" >
+		
+		        <RelativeLayout
+		            android:id="@+id/user_photo_ly"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true" >
+	
+		            <com.goalgroup.ui.view.CircularImageView
+		                android:id="@+id/user_photo"
+		                android:layout_width="50dp"
+		                android:layout_height="50dp"
+		                android:layout_alignParentLeft="true"
+		                android:layout_alignParentTop="true"
+		                android:contentDescription="@string/img_desc_empty"
+		                app:border="true"
+		                app:border_color="@color/white"
+		                app:border_width="2dp"
+		                app:shadow="true" />
+		
+		        </RelativeLayout>
+		
+		        <RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal|bottom"
+		            android:layout_marginBottom="5dp" >
+		
+		            <TextView
+		                android:id="@+id/reply_number"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_centerVertical="true"
+		                android:background="@drawable/bbs_reply_number_bg"
+		                android:gravity="center"
+		                android:text="5"
+		                android:textColor="#ffffff"
+		                android:textSize="14sp" />
+
+		        </RelativeLayout>
+		
+		    </FrameLayout>
+	    </FrameLayout>
+    </FrameLayout>
+    
+</LinearLayout>
