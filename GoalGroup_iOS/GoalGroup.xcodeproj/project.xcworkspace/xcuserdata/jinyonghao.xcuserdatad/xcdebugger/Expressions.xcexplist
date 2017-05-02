@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[Sqlite3Manager getUnreadMessageInRoom:]:Sqlite3Manager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Chat receiveMessage:]:Chat.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ConferenceViewCell drawConferenceWithRecord:]:ConferenceViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ChallengePlayViewController multiTeamSelected:]:ChallengePlayViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "msg">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ogg_sync_check:framing.c">
+      </ContextState>
+      <ContextState
+         contextName = "-[TeamSelectController confirm]:TeamSelectController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Decapsulator convertOggToPCMWithData:]:Decapsulator.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "decodedByteLength">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ogg_sync_pageseek:framing.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "page[26]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

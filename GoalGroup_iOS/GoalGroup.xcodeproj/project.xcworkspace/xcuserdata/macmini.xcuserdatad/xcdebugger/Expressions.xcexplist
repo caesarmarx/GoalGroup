@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ChallengePlayViewController recommandToClubRoom:]:ChallengePlayViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CLUBS">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GameScheduleController gotoDiscussRoomClick:]:GameScheduleController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "arr">
+            </PersistentString>
+            <PersistentString
+               value = "appDelegate.ggaNav">
+            </PersistentString>
+            <PersistentString
+               value = "self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayerDetailController changeButtonClick:]:PlayerDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "DISTRICTS">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginManager checkIsAlreadyLogin]:LoginManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "UID">
+            </PersistentString>
+            <PersistentString
+               value = "NICKNAME">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubRoomViewController dismissClubResultWithErrorCode:]:ClubRoomViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CLUBS">
+            </PersistentString>
+            <PersistentString
+               value = "nClubID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "lookUpImpOrForward:(null)">
+      </ContextState>
+      <ContextState
+         contextName = "-[CreatingClubController createClubResultWithErrorCode:data:]:CreatingClubController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CLUBS">
+            </PersistentString>
+            <PersistentString
+               value = "ADMINCLUBS">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CreatingClubController viewDidLoad]:CreatingClubController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubManager intClubIDWithRoomID:]:ClubManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[item valueForKey:@&quot;room_id&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CreatingClubController selectedCityWithIndex:]:CreatingClubController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[CITYS objectAtIndex:index] objectForKey:@&quot;city&quot;];">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubSearchConditionController doSearch:]:ClubSearchConditionController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubManager checkAdminClub:]:ClubManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ResearchViewController tableView:cellForRowAtIndexPath:]:ResearchViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "nInvCount">
+            </PersistentString>
+            <PersistentString
+               value = "nTempInvCount">
+            </PersistentString>
+            <PersistentString
+               value = "strCount">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DiscussDetailController layoutComponents]:DiscussDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.bounds.size.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager getMasterData:]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastUpdateTime">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[NSWeek intWithStringWeek:]:NSWeek.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CitySelectController initWithStyle:]:CitySelectController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CITYS">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager applyGame:]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "UID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[FileManager RemoveAllProgramData]:FileManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[FileManager GetDocumentsPath] stringByAppendingPathComponent:@&quot;image&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubRoomViewController sendVoiceMailWithFilePath:]:ClubRoomViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "bubbleData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DiscussDetailController evalDiscussResultWithErrorCode:data:]:DiscussDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "item.record">
+            </PersistentString>
+            <PersistentString
+               value = "articles">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BattleResultInputController getGameResultResultWithErrorCode:data:]:BattleResultInputController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayerDetailController layoutComponents]:PlayerDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "UID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager loginThread:]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastUpdateTime">
+            </PersistentString>
+            <PersistentString
+               value = "UID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Sqlite3Manager lastChattingTimeAllRoom]:Sqlite3Manager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "UID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ZoneSelectController tableView:didSelectRowAtIndexPath:]:ZoneSelectController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubRoomViewController chattingRoomTimerProcess:]:ClubRoomViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubRoomViewController viewDidLoad]:ClubRoomViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[NoticePlayViewController browseChallengeResultWithErrorCode:dataMore:data:]:NoticePlayViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Chat receiveAudioMessage:]:Chat.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.delegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Chat receiveMessage:]:Chat.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "nCurChattingRoom">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager clubListThread]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "UID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager loginThread]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "UID">
+            </PersistentString>
+            <PersistentString
+               value = "OPTIONS">
+            </PersistentString>
+            <PersistentString
+               value = "ADMINCLUBS">
+            </PersistentString>
+            <PersistentString
+               value = "DISTRICTS">
+            </PersistentString>
+            <PersistentString
+               value = "LOGIN_URL">
+            </PersistentString>
+            <PersistentString
+               value = "nTempInvCount">
+            </PersistentString>
+            <PersistentString
+               value = "CLUBS">
+            </PersistentString>
+            <PersistentString
+               value = "USERPHOTO">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager setGameResultComplete:]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.delegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingsViewController viewWillAppear:]:SettingsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "OPTIONS">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubRoomViewController recordingFinishedWithFileName:time:]:ClubRoomViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "voicemailFilePath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager browseChallengeListThreadFromPage]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CLUBS">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubSearchConditionController viewWithCondition]:ClubSearchConditionController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[NSBubbleData imageClick:]:NSBubbleData.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageForImage.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubManager stringClubNameWithID:]:ClubManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "clubs">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubListRecord initWithClubID:userType:ClubImageUrl:clubname:members:activeRate:averageAge:activeArea:activeWeeks:foundDate:city:sponsor:homeStadium:introduction:allGames:vicGames:lossGames:drawGames:]:ClubListRecord.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CITYS">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DiscussDetailController getDiscussDetailResultWithErrorCode:more:header:article:]:DiscussDetailController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DiscussDetailItemCell setupInternalData]:DiscussDetailItemCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubDetailController relayoutComponents]:ClubDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "scrollView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ChallengeItemView loadClubImage:WithImageView:]:ChallengeItemView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageView.frame.size.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Chat nowNoChattingInRoom:]:Chat.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "bIsChatting">
+            </PersistentString>
+            <PersistentString
+               value = "nCurChattingRoom">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HttpManager setGameResult:]:HttpManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.delegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ChallengePlayViewController agreeGame:withArrowView:]:ChallengePlayViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "ADMINCLUBCOUNT">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MemberItemView drawWithRecord:]:MemberItemView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "borderColor">
+            </PersistentString>
+            <PersistentString
+               value = "memberThumbImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubRoomViewController requestSucceeded:]:ClubRoomViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubRoomViewController getMessageHistoryWithAll:]:ClubRoomViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "item.msg">
+            </PersistentString>
+            <PersistentString
+               value = "messageList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
